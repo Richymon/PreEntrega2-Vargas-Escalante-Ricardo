@@ -1,0 +1,107 @@
+/*color de fondo y tipografia*/
+body {
+    background-color: rgb(55, 72, 38);
+}
+
+section {
+    background-color: black;
+    color: rgb(247, 3, 255);
+    font-family: "PT Serif", serif;
+}
+
+article {
+    background-color: rgb(33, 132, 213);
+    color: black;
+    padding: 100px;
+}
+
+p {
+    font-size: 1.3rem;
+}
+
+/*barra de navegacion*/
+nav {
+    color: rgb(47, 0, 255);
+    font-size: 2rem;
+    padding: 10px;
+    font-family: "PT Serif", serif;
+}
+
+/*barra de busqueda games*/
+#nav-games {
+    text-align: center;
+    line-height: 1;
+}
+
+/*titulo principal*/
+h1 {
+    font-size: 12rem;
+    text-align: center;
+    font-family: "PT Serif", serif;
+}
+
+h2 {
+    font-size: 5.3rem;
+    text-align: center;
+    font-family: "PT Serif", serif;
+}
+
+/*titulo de articulo principal*/
+h3 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+/*titulo del juego*/
+h4 {
+
+    font-size: 2.5rem;
+}
+
+/*titulo about me*/
+#ricardo {
+    font-size: 7.3rem;
+}
+
+/*titulo article about me*/
+h5 {
+    font-size: 3rem;
+}
+
+#web-designer {
+    font-size: 4.3rem;
+    text-align: center;
+    padding: 5px;
+}
+
+/*Imagenes del Carrete home*/
+img {
+    width: 25rem;
+    height: 25rem;
+    padding: 25px;
+}
+
+/*Imagenes en los articulos*/
+.img-art {
+    width: 15rem;
+    height: 15rem;
+}
+
+/*footer*/
+footer {
+    background-color: blueviolet;
+    font-family: "PT Serif", serif;
+}
+
+.footer-t {
+    padding: 10px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/*go top button*/
+.go-up {
+    font-size: 1.5rem;
+    text-align: center;
+    color: black;
+}
