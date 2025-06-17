@@ -5,57 +5,89 @@
     box-sizing: border-box;
 }
 
-/*color de fondo y tipografia*/
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/*fondo y tipografia*/
 body {
     background-color: rgb(55, 72, 38);
 }
 
 section {
     margin: 10px;
-    padding: 10px;
+    padding: 15px;
     background-color: black;
     color: rgb(247, 3, 255);
     font-family: "PT Serif", serif;
+    border-radius: 5px;
 }
 
 p {
     font-size: 1.3rem;
+    border-radius: 10px;
 }
 
 /*barra de navegacion*/
 header nav ul {
     margin: 0px;
     border: 0px;
-    display: flex;
-    justify-content: center;
-    color: rgb(0, 0, 0);
+    padding: 5px;
+    display: inline;
+    text-align: center;
     font-size: 2rem;
     font-family: "PT Serif", serif;
     background-color: whitesmoke;
     list-style: none;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1000;
 }
 
 header nav ul li {
-    padding-left: 200px;
-    padding-right: 200px;
+    display: inline;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 200px;
+    font-size: 1.8rem;
+    color: #000000;
+    background-color: #2184D5;
+    border-radius: 20px;
+}
+
+header nav ul li:hover {
+    background-color: #8A2BE2;
 }
 
 /*barra de navegacion. about me*/
-main aside nav ul {
+#ul-about-me {
     margin: 0px;
     border: 0px;
     display: flex;
     justify-content: center;
+    align-items: center;
     color: rgb(0, 0, 0);
     font-size: 2rem;
     font-family: "PT Serif", serif;
     background-color: whitesmoke;
+    width: 100%;
     list-style: none;
 }
 
-main aside nav ul li {
-    padding-left: 200px;
-    padding-right: 200px;
+.li-about-me {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 10px 200px 10px 200px;
+    background-color: #8A2BE2;
+    list-style: none;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.li-about-me:hover {
+    background-color: #2184D5;
 }
 
 /*barra de busqueda games*/
@@ -73,33 +105,37 @@ main section nav ul il {
 
 /*titulo principal*/
 
-#main-title {
+.main-title {
     margin-left: 100px;
     margin-right: 50%;
     border-width: 20px;
     border-color: white;
     border-style: solid;
     padding-left: 100px;
-}
-
-h1 {
     font-size: 10rem;
     font-family: "PT Serif", serif;
+    position: relative;
+    bottom: -45px;
 }
 
-#name-page {
+.name-page {
     position: absolute;
-    top: 230px;
+    top: 220px;
     left: 1100px;
     font-size: 2rem;
     font-style: italic;
+    background-color: #2184D5;
+    padding: 0px 20px 0px 20px;
+    margin: 0px;
+    color: white;
+    border-radius: 0px 10px 10px 0px;
 }
 
-h2 {
+.sub-title {
     font-size: 3rem;
     text-align: center;
     font-family: "PT Serif", serif;
-    margin-top: 30px;
+    margin-top: 50px;
     padding-top: 0px;
 }
 
@@ -118,7 +154,7 @@ h3 {
     margin-bottom: 20px;
 }
 
-/*titulo del juego*/
+/*titulo de las noticias*/
 main section article h4 {
     margin-left: 100px;
     position: relative;
@@ -126,8 +162,9 @@ main section article h4 {
     z-index: 1;
     font-size: 2.5rem;
     background-color: #000000;
-    padding: 10px;
+    padding: 15px;
     display: inline;
+    border-radius: 0px 30px 30px 0px;
 }
 
 /*Los articulos principales*/
@@ -140,6 +177,7 @@ body main section article div {
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
+    border-radius: 20px;
 }
 
 
@@ -147,7 +185,6 @@ body main section article div {
 
 #nombre-foto {
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
@@ -155,28 +192,38 @@ body main section article div {
     display: inline-block;
     font-size: 4.3rem;
     margin-left: 40%;
+    margin-top: -40px;
     padding: 10px;
     background-color: #F703FF;
     position: absolute;
     top: 780px;
+    padding: 10px;
+    border-radius: 10px;
 }
 
+#mi-foto {
+    margin-right: 350px;
+    margin-left: 200px;
+    border-radius: 50%;
+}
 
 #ricardo {
+    position: relative;
+    bottom: 50px;
     font-size: 7.3rem;
+    padding: 10px;
+    border-radius: 40px;
 }
 
 /*titulo article about me*/
 h5 {
+    display: inline;
+    padding: 5px 100px 5px 10px;
+    margin: 10px;
     font-size: 3rem;
-}
-
-/*articulos about me*/
-main section article p {
-    margin: 20px;
-    padding: 20px;
     background-color: #2184D5;
-    color: black;
+    border-radius: 0px 30px 30px 0px;
+    color: #ffffff;
 }
 
 /*footer*/
@@ -186,18 +233,103 @@ footer {
 }
 
 .footer-t {
-    padding: 10px;
+    display: inline;
+    padding: 5px 10px 5px 10px;
     font-size: 2rem;
-    text-align: center;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    color: #000000;
+    border-radius: 0px 10px 10px 0px;
 }
 
-/*go top button*/
+.mis-datos {
+    color: white;
+}
+
+.mis-datos:hover {
+    color: #2184D5;
+}
+
 .go-up {
-    font-size: 1.5rem;
+    display: inline;
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 50px;
+    margin: 50%;
+    position: relative;
+    bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.go-up:hover {
+    background-color: #2184D5;
+}
+
+/*Estilos boton videos bootstrap*/
+.btn.btn-primary.btn-styles {
+    background-color: whitesmoke;
+    color: #000000;
+    font-family: "PT Serif", serif;
+    position: fixed;
+    top: 7%;
+    transition: all 0.3s ease;
+}
+
+.btn.btn-primary.btn-styles:hover {
+    background-color: #2184D5;
+}
+
+.btn.btn-primary.btn-styles:hover svg {
+    background-color: #F703FF;
+}
+
+/*Estilo boton offcanvas*/
+.btn-close {
+    background-image: none;
+    --bs-btn-close-opacity: 1;
+    --bs-btn-close-hover-opacity: 1;
+}
+
+.btn-close.btn-styles svg {
+    width: 40px;
+    height: 40px;
+    margin-left: -20px;
+    margin-top: -10px;
+    background-color: #ffffff;
+}
+
+.btn-close.btn-styles:hover svg {
+    background-color: #2184D5;
+}
+
+/*Estilos offcambas bootstrap*/
+.offcanvas.offcanvas-start.offcanvas-style {
+    width: 700px;
+    background-color: #8A2BE2;
+}
+
+/*Estilos titulo bootstrap*/
+.offcanvas-title.offcanvas-title-style {
+    color: #ffffff;
+    background-color: #000000;
+    padding: 20px;
+    font-size: 3rem;
+    font-family: "PT Serif", serif;
     text-align: center;
-    color: black;
-    padding-top: 0px;
-    margin-top: 0px border-top 0px;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline;
+    width: fit-content;
+}
+
+/*Estilos de video Youtube*/
+.videos {
+    background-color: #2184D5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px;
 }
 
 /*Media Query PHONE format*/
