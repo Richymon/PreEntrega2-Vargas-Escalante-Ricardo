@@ -39,20 +39,27 @@
         </section>
 
         <!--navegacion. que este en el lado izquierdo de toda la pantalla-->
-            <nav>
-                <ul id="ul-about-me">
-                    <li class="li-about-me"><a href="#career">Career</a></li>
-                    <li class="li-about-me"><a href="#vision">Vision</a></li>
-                    <li class="li-about-me"><a href="#future-p">Future Plans</a></li>
-                </ul>
-            </nav>
+        <nav>
+            <ul id="ul-about-me">
+                <li class="li-about-me"><a href="#career">Career</a></li>
+                <li class="li-about-me"><a href="#vision">Vision</a></li>
+                <li class="li-about-me"><a href="#future-p">Future Plans</a></li>
+            </ul>
+        </nav>
 
         <!--articulo principal-->
         <section id="nombre-foto">
-            <img id="mi-foto" src="../imagenes/ricardo.jpg" alt="My picture">
-            <h3 id="ricardo">Ricardo Vargas Escalante</h3>
+            <div>
+                <img id="mi-foto" src="../imagenes/ricardo.jpg" alt="My picture">
+            </div>
+            <div>
+                <h3 id="ricardo">Ricardo Vargas Escalante</h3>
+            </div>
+            <div>
+                <h4 id="web-designer">Web designer and Games Creator</h4>
+            </div>
         </section>
-        <h4 id="web-designer">Web designer and Games Creator</h4>
+
         <section>
             <!--carrera-->
             <article id="career">
@@ -82,7 +89,7 @@
         </section>
     </main>
 
-     <!--Pestaña emergente de bootstrap. videos-->
+    <!--Pestaña emergente de bootstrap. videos-->
     <aside>
         <button class="btn btn-primary btn-styles" type="button" data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Videos
@@ -98,8 +105,8 @@
             <div class="offcanvas-header">
                 <h5 class="offcanvas-title offcanvas-title-style" id="offcanvasWithBothOptionsLabel">Youtube Videos</h5>
                 <button type="button" class="btn-close btn-styles" data-bs-dismiss="offcanvas" aria-label="Close">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                        class="bi bi-caret-left-square-fill" viewBox="0 0 16 16">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-caret-left-square-fill"
+                        viewBox="0 0 16 16">
                         <path
                             d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm10.5 10V4a.5.5 0 0 0-.832-.374l-4.5 4a.5.5 0 0 0 0 .748l4.5 4A.5.5 0 0 0 10.5 12" />
                     </svg>
@@ -131,13 +138,15 @@
     <!--footer o pie de pagina-->
     <footer>
         <h6 class="footer-t">Contact</h6>
-        <section>
+        <section class=sect-datos>
             <p>
-                Phone and Whatsapp: <a class="mis-datos" href="https://api.whatsapp.com/send?phone=9842682031" target="_blank">984 268
+                Phone and Whatsapp: <a class="mis-datos" href="https://api.whatsapp.com/send?phone=9842682031"
+                    target="_blank">984 268
                     2031</a>
             </p>
             <p>
-                e-mail: <a class="mis-datos" href="mailto:ricardo.fotos.90@gmail.com" target="_blank">ricardo.fotos.90@gmail.com</a>
+                e-mail: <a class="mis-datos" href="mailto:ricardo.fotos.90@gmail.com"
+                    target="_blank">ricardo.fotos.90@gmail.com</a>
             </p>
             <p>
                 <a class="mis-datos" href="https://www.youtube.com/@richymongames666" target="_blank">Youtube</a>

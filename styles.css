@@ -1,3 +1,8 @@
+body,
+html {
+    overflow-x: hidden;
+}
+
 /*Reset size*/
 * {
     margin: 0px;
@@ -27,15 +32,19 @@ section {
 p {
     font-size: 1.3rem;
     border-radius: 10px;
+    margin: 10px;
 }
+
 
 /*barra de navegacion*/
 header nav ul {
     margin: 0px;
     border: 0px;
     padding: 5px;
-    display: inline;
-    text-align: center;
+    display: flex;
+    gap: 20%;
+    align-items: center;
+    justify-content: center;
     font-size: 2rem;
     font-family: "PT Serif", serif;
     background-color: whitesmoke;
@@ -47,10 +56,8 @@ header nav ul {
 }
 
 header nav ul li {
-    display: inline;
     padding-left: 30px;
     padding-right: 30px;
-    margin: 200px;
     font-size: 1.8rem;
     color: #000000;
     background-color: #2184D5;
@@ -68,6 +75,7 @@ header nav ul li:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 300px;
     color: rgb(0, 0, 0);
     font-size: 2rem;
     font-family: "PT Serif", serif;
@@ -79,7 +87,7 @@ header nav ul li:hover {
 .li-about-me {
     padding-left: 20px;
     padding-right: 20px;
-    margin: 10px 200px 10px 200px;
+    margin: 10px;
     background-color: #8A2BE2;
     list-style: none;
     text-align: center;
@@ -92,18 +100,23 @@ header nav ul li:hover {
 
 /*barra de busqueda games*/
 main section nav ul {
+    margin: 5px;
     display: flex;
     justify-content: center;
+    gap: 300px;
 
 }
 
-main section nav ul il {
-    padding-left: 200px;
-    padding-right: 200px;
+main section nav ul li {
+    padding-left: 20px;
+    padding-right: 20px;
     font-size: 1.3rem;
+    list-style: none;
 }
 
 /*titulo principal*/
+
+
 
 .main-title {
     margin-left: 100px;
@@ -111,21 +124,22 @@ main section nav ul il {
     border-width: 20px;
     border-color: white;
     border-style: solid;
-    padding-left: 100px;
+    padding-left: 2rem;
     font-size: 10rem;
     font-family: "PT Serif", serif;
     position: relative;
     bottom: -45px;
+    border-right: none;
 }
 
 .name-page {
     position: absolute;
-    top: 220px;
-    left: 1100px;
+    top: 100px;
+    left: 40%;
     font-size: 2rem;
     font-style: italic;
     background-color: #2184D5;
-    padding: 0px 20px 0px 20px;
+    padding: 0px 10px 0px 10px;
     margin: 0px;
     color: white;
     border-radius: 0px 10px 10px 0px;
@@ -139,11 +153,12 @@ main section nav ul il {
     padding-top: 0px;
 }
 
-/*Imagenes del Carrete home*/
-main section img {
-    width: 25rem;
-    height: 25rem;
-    padding: 25px;
+/*Imagenes del Carrete home. (Ajustar tamaño)*/
+.carousel-inner.style {
+    justify-content: center;
+    width: 100%;
+    height: 300px;
+    padding: 0px;
 }
 
 /*titulo del articulo principal*/
@@ -158,7 +173,7 @@ h3 {
 main section article h4 {
     margin-left: 100px;
     position: relative;
-    bottom: -120px;
+    bottom: -100px;
     z-index: 1;
     font-size: 2.5rem;
     background-color: #000000;
@@ -174,8 +189,8 @@ body main section article div {
     padding: 20px;
     color: black;
     display: flex;
-    flex-direction: row-reverse;
     justify-content: space-between;
+    flex-direction: row-reverse;
     align-items: center;
     border-radius: 20px;
 }
@@ -184,12 +199,13 @@ body main section article div {
 /*titulo about me*/
 
 #nombre-foto {
-    display: flex;
     align-items: center;
+    display: grid;
+    grid-template-columns: 30% 60%;
 }
 
 #web-designer {
-    display: inline-block;
+    display: flex;
     font-size: 4.3rem;
     margin-left: 40%;
     margin-top: -40px;
@@ -199,9 +215,12 @@ body main section article div {
     top: 780px;
     padding: 10px;
     border-radius: 10px;
+    color: #000000;
 }
 
 #mi-foto {
+    width: 25rem;
+    height: 25rem;
     margin-right: 350px;
     margin-left: 200px;
     border-radius: 50%;
@@ -218,9 +237,9 @@ body main section article div {
 /*titulo article about me*/
 h5 {
     display: inline;
-    padding: 5px 100px 5px 10px;
+    padding: 5px 2% 5px 10px;
     margin: 10px;
-    font-size: 3rem;
+    font-size: 2.5rem;
     background-color: #2184D5;
     border-radius: 0px 30px 30px 0px;
     color: #ffffff;
@@ -230,6 +249,7 @@ h5 {
 footer {
     background-color: blueviolet;
     font-family: "PT Serif", serif;
+    padding: 0px;
 }
 
 .footer-t {
@@ -240,6 +260,8 @@ footer {
     border-radius: 20px;
     color: #000000;
     border-radius: 0px 10px 10px 0px;
+    position: relative;
+    top: 5px;
 }
 
 .mis-datos {
@@ -249,6 +271,13 @@ footer {
 .mis-datos:hover {
     color: #2184D5;
 }
+
+.sect-datos {
+    padding: 5px;
+    margin: 5px;
+}
+
+/*boton go top*/
 
 .go-up {
     display: inline;
@@ -273,6 +302,7 @@ footer {
     position: fixed;
     top: 7%;
     transition: all 0.3s ease;
+    z-index: 1000;
 }
 
 .btn.btn-primary.btn-styles:hover {
@@ -315,11 +345,12 @@ footer {
     padding: 20px;
     font-size: 3rem;
     font-family: "PT Serif", serif;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    display: inline;
-    width: fit-content;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    position: relative;
+    right: 20px;
 }
 
 /*Estilos de video Youtube*/
@@ -332,4 +363,446 @@ footer {
     margin: 20px;
 }
 
-/*Media Query PHONE format*/
+/*articulos about me*/
+h5 {
+    font-size: 2rem;
+}
+
+/*footer*/
+.footer-t {
+    font-size: 1.5rem;
+}
+
+/*go top*/
+.go-up {
+    font-size: 1rem;
+}
+
+/*media query hd*/
+@media (max-width: 1440px) {
+
+    /*titulo principal*/
+    .main-title {
+        font-size: 8rem;
+        border-width: 20px;
+        padding-left: 20px;
+        padding-right: 80%;
+        margin-left: 80px;
+    }
+
+    .name-page {
+        font-size: 1.5rem;
+        top: 100px;
+        left: 70%;
+    }
+
+    /*titulos de las noticias o articulos*/
+    main section article h4 {
+        font-size: 2.3rem;
+        top: 25px;
+    }
+
+    /*titulo principal about me*/
+    #mi-foto {
+        width: 150px;
+        height: 150px;
+        justify-content: left;
+        margin: 0px 0px 0px 30px;
+    }
+
+    #ricardo {
+        font-size: 3rem;
+        margin-top: 60px;
+        padding: 25px;
+    }
+
+    #web-designer {
+        position: absolute;
+        font-size: 1.5rem;
+        justify-content: center;
+        margin: 0px 0px 15px 0px;
+        top: 580px;
+        right: 26%;
+    }
+}
+
+/*media querry laptop*/
+@media (max-width: 1280px) {
+
+    /*Boton videos*/
+    .btn.btn-primary.btn-styles {
+        top: 60px;
+    }
+
+    /*Videos offcanbas*/
+    .offcanvas.offcanvas-start.offcanvas-style {
+        width: 40%;
+    }
+
+    /*titulo principal*/
+    .main-title {
+        font-size: 7rem;
+        border-width: 20px;
+        padding-left: 20px;
+        padding-right: 80%;
+        margin-left: 80px;
+    }
+
+    .name-page {
+        font-size: 1.5rem;
+        left: 70%;
+    }
+
+    /*titulos de las noticias o articulos*/
+    main section article h4 {
+        font-size: 2.3rem;
+        top: 25px;
+    }
+
+    /*titulo principal about me*/
+    #mi-foto {
+        width: 150px;
+        height: 150px;
+        justify-content: left;
+        margin: 0px 0px 0px 30px;
+    }
+
+    #ricardo {
+        font-size: 3rem;
+        margin-top: 60px;
+        padding: 25px;
+    }
+
+    #web-designer {
+        font-size: 1.5rem;
+        justify-content: center;
+        margin: 0px 0px 15px 0px;
+        top: 550px;
+        right: 17%;
+    }
+}
+
+/*media querry tablets big*/
+@media (max-width: 1024px) {
+
+    /*Boton videos*/
+    .btn.btn-primary.btn-styles {
+        top: 60px;
+    }
+
+    /*Videos offcanbas*/
+    .offcanvas.offcanvas-start.offcanvas-style {
+        width: 50%;
+    }
+
+    /*titulo principal*/
+    .main-title {
+        font-size: 7rem;
+        border-width: 15px;
+        padding-left: 20px;
+        padding-right: 80%;
+        margin-left: 80px;
+    }
+
+    .name-page {
+        font-size: 1.5rem;
+        left: 70%;
+    }
+
+    /*titulos de las noticias o articulos*/
+    main section article h4 {
+        font-size: 2rem;
+        top: 25px;
+    }
+
+    /*nav bag games*/
+    main section nav ul {
+        justify-content: center;
+        gap: 20%;
+    }
+
+    /*Barra de navegacion about me*/
+    #ul-about-me {
+        justify-content: center;
+        font-size: 1.5rem;
+        gap: 20%;
+        margin 0px
+    }
+
+    /*titulo principal about me*/
+    #mi-foto {
+        width: 150px;
+        height: 150px;
+        justify-content: left;
+        margin: 0px 0px 0px 30px;
+    }
+
+    #ricardo {
+        font-size: 3rem;
+        margin-top: 60px;
+        padding: 0px;
+    }
+
+    #web-designer {
+        position: absolute;
+        font-size: 1.5rem;
+        justify-content: center;
+        margin: 0px 0px 15px 0px;
+        top: 500px;
+        right: 17%;
+    }
+}
+
+/*media querry tablets small*/
+@media (max-width: 801px) {
+
+    /*nav bar*/
+    header nav ul {
+        gap: 14%;
+        justify-content: center;
+    }
+
+    header nav ul li {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    /*Boton videos*/
+    .btn.btn-primary.btn-styles {
+        top: 60px;
+    }
+
+    /*Videos offcanbas*/
+    .offcanvas.offcanvas-start.offcanvas-style {
+        width: 100%;
+    }
+
+    /*titulo principal*/
+    .main-title {
+        font-size: 7rem;
+        border-width: 15px;
+        padding-left: 2px;
+        margin-left: 80px;
+    }
+
+    .name-page {
+        font-size: 1.5rem;
+        left: 75%;
+    }
+
+    .sub-title {
+        display: flex;
+        font-size: 2.5rem;
+        justify-content: right;
+        margin-right: 30px;
+    }
+
+    /*titulos de las noticias o articulos*/
+    main section article h4 {
+        font-size: 2rem;
+        top: 20px;
+    }
+
+    /*nav bag games*/
+    main section nav ul {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    /*Barra de navegacion about me*/
+    #ul-about-me {
+        justify-content: center;
+        font-size: 1.5rem;
+        gap: 20%;
+        margin 0px
+    }
+
+    /*titulo principal about me*/
+    #mi-foto {
+        width: 150px;
+        height: 150px;
+        justify-content: left;
+        margin: 0px 0px 0px 30px;
+    }
+
+    #ricardo {
+        font-size: 3rem;
+        margin-top: 60px;
+        padding: 0px;
+    }
+
+    #web-designer {
+        position: absolute;
+        font-size: 1.5rem;
+        justify-content: center;
+        margin: 0px 0px 15px 0px;
+        z-index: 1;
+        top: 535px;
+        right: 17%;
+    }
+}
+
+/*Media Query Movile big*/
+@media (max-width: 426px) {
+
+    p {
+        font-size: 14px;
+    }
+
+    /*nav bar*/
+    header nav ul {
+        gap: 5%;
+        justify-content: left;
+    }
+
+    header nav ul li {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    /*Boton videos*/
+    .btn.btn-primary.btn-styles {
+        top: 60px;
+    }
+
+    /*Videos offcanbas*/
+    .offcanvas.offcanvas-start.offcanvas-style {
+        width: 100%;
+    }
+
+    .offcanvas-title.offcanvas-title-style {
+        font-size: 2rem;
+    }
+
+    /*titulo principal*/
+    .main-title {
+        font-size: 4rem;
+        border-width: 10px;
+        padding-left: 2px;
+        padding-right: 150px;
+        margin-left: 80px;
+    }
+
+    .name-page {
+        font-size: 1rem;
+        top: 38px;
+        left: 70%;
+    }
+
+    .sub-title {
+        font-size: 2rem;
+    }
+
+    /*Imagenes*/
+
+    main section img {
+        display: none;
+    }
+
+    #home-image {
+        display: none;
+    }
+
+    /*titulo del main*/
+    h3 {
+        font-size: 2rem;
+    }
+
+    /*nav bag games*/
+    main section nav ul {
+        justify-content: left;
+        gap: 20px;
+        margin: 0px;
+        padding: 2px;
+    }
+
+    main section nav ul li {
+        font-size: 12px;
+    }
+
+    /*titulos de las noticias o articulos*/
+    main section article h4 {
+        font-size: 1.5rem;
+        top: 20px;
+    }
+
+    main section article div img {
+        width: 16px;
+        height: ;
+    }
+
+    /*Barra de navegacion about me*/
+
+    #ul-about-me {
+        justify-content: center;
+        font-size: 1rem;
+        gap: 1%;
+        margin 0px
+    }
+
+    /*Titulo about me*/
+    #ricardo {
+        font-size: 2rem;
+        right: 10%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    #web-designer {
+        position: absolute;
+        font-size: 1.2rem;
+        margin: 0px;
+        top: 480px;
+        right: 17px;
+        text-align: center;
+    }
+}
+
+/*Media query movil medium*/
+@media (max-width: 376px) {
+
+    /*nav bar*/
+    header nav ul {
+        gap: 35px;
+        justify-content: left;
+    }
+
+    /*titulo principal*/
+    .main-title {
+        font-size: 3.8rem;
+        border-width: 10px;
+    }
+
+    .name-page {
+        font-size: 1.3rem;
+        top: 9%;
+    }
+
+    .sub-title {
+        font-size: 1.7rem;
+    }
+
+    /*titulo de noticias*/
+    h3 {
+        font-size: 2rem;
+    }
+
+    /*titulo articulos*/
+    main section article h4 {
+        font-size: 1.5rem;
+    }
+
+    /*articulos about me*/
+    h5 {
+        font-size: 1.8rem;
+    }
+
+    /*footer*/
+    .footer-t {
+        font-size: 1.2rem;
+    }
+
+    .go-up {
+        font-size: 1rem;
+    }
+}
