@@ -1,0 +1,38 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixin";
+@use "../components/button";
+@use 'sass:list';
+
+/*footer*/
+
+footer {
+    background: variables.$bk-color;
+
+    .footer-t {
+        color: list.nth(variables.$color-bw, 2);
+        font-size: variables.$news-updates;
+        background: variables.$bk-color-ttl;
+        @include mixin.flex;
+    }
+
+    section {
+        text-align: center;
+
+        p {
+            color: list.nth(variables.$color-bw, 1);
+            font-size: variables.$ttl-wrapper;
+        }
+
+        .mis-datos {
+            color: white;
+            font-size: variables.$txt-size ;
+            @include button.boton;
+            @include button.hover-btn;
+            color: list.nth(variables.$color-bw, 2);
+        }
+
+        .mis-datos:hover {
+            color:list.nth(variables.$color-bw, 1);
+        }
+    }
+}

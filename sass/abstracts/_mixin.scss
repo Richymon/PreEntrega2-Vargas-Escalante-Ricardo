@@ -1,0 +1,81 @@
+@use "../abstracts/variables";
+@use 'sass:list';
+
+//MIXIN
+
+//flex estandar
+@mixin flex {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+//GRID ESTANDAR 
+@mixin grid ($colums: 12, $rows: auto, $gap: 10px) {
+    display: grid;
+    grid-template-columns: $colums;
+    grid-template-rows: $rows;
+    gap: $gap;
+    padding: 10px;
+    margin: 10px;
+}
+
+//barra de navegacion
+@mixin nav-bar {
+    list-style: none;
+    gap: 20%;
+    font-size: variables.$font-nav-bar;
+    background-color: list.nth(variables.$color-bw, 1);
+}
+
+//titulos de las noticias
+@mixin art-ttl {
+    background: variables.$bk-color-ttl;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+//articulos principales
+@mixin art-principal {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    background: variables.$bk-color;
+    padding-left: 20px;
+    align-items: center;
+}
+
+//titulo off canbas
+@mixin ttl-off-canbas {
+    padding: 20px;
+    margin-left: -35px;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    border-radius: variables.$bor-rad;
+}
+
+//imagenes del articulo
+@mixin art-img {
+    margin: 10px;
+    margin-right: 5%;
+    width: 300px;
+    height: 300px;
+    padding: 0px;
+    border: inset;
+    border-width: 7px;
+    border-radius: variables.$bor-rad;
+
+}
+
+//titulos about me
+@mixin about-ttl {
+    display: inline;
+    background: variables.$bk-color-ttl;
+    margin: 10px;
+    padding: 5px 10px 5px 10px;
+    border-radius: variables.$bor-rad;
+    font-size: variables.$subttl-size;
+    color: list.nth(variables.$color-bw, 1);
+}

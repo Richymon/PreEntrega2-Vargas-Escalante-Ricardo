@@ -1,0 +1,26 @@
+// LINKS ARCHIVOS Y CARPETAS
+
+//RESET
+@use "base/reset";
+
+//TYPOGRAPHY
+@use "base/typography";
+
+//BARRA DE NAVEGACION
+@use "layaut/navigation";
+
+
+//titulo principal
+@use "layaut/grid";
+
+//tamaño imagenes carrete
+@use "pages/home";
+
+//boton de video
+@use "layaut/sidebar";
+
+//footer
+@use "layaut/footer";
+
+//about me
+@use "pages/about";

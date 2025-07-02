@@ -1,0 +1,23 @@
+[33mcommit 4ed4e016992cf6d31ea0c0417e86375adf4c41f9[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mV.0.0.5[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/V.0.0.4[m[33m, [m[1;32mmain[m[33m, [m[1;32mV.0.0.4[m[33m)[m
+Author: Richymon <i.r.r.a.8.0.4.2.7@gmail.com>
+Date:   Tue Jun 17 23:39:57 2025 -0600
+
+    V.0.0.4 Se agrego carrete de bootstrap. Se añadieron todas las medias query estandar. Secorrigio CSS agregando Grid
+
+[33mcommit 2575881ead894b292ec59f54d399973bc2409844[m[33m ([m[1;31morigin/V.0.0.3[m[33m, [m[1;32mV.0.0.3[m[33m)[m
+Author: Richymon <i.r.r.a.8.0.4.2.7@gmail.com>
+Date:   Mon Jun 16 20:48:32 2025 -0600
+
+    V.0.0.3 Correciones en el HTML y estilisacion en CSS avanzado y agregado de hovers. Se agrego una ventana emergente con Bootstrap, el cual contiene videos.
+
+[33mcommit 470aef64b606d1f0099387412aae4bab5a093ade[m[33m ([m[1;31morigin/V.0.0.2[m[33m, [m[1;32mV.0.0.2[m[33m)[m
+Author: Richymon <i.r.r.a.8.0.4.2.7@gmail.com>
+Date:   Mon Jun 16 06:15:45 2025 -0600
+
+    V.0.0.2 Grandes cambios en la estructura de HTML & CSS. Se agrego Box & Flex. Se añadieron los videos directamente a Youtube, para reducir el espacio
+
+[33mcommit 8ee2b211ad953848ff25fc2d55b82df2d2e64882[m
+Author: Richymon <i.r.r.a.8.0.4.2.7@gmail.com>
+Date:   Sun Jun 15 21:57:58 2025 -0600
+
+    V.0.0.1 Estructura basica HTML & CSS
