@@ -1,0 +1,58 @@
+@use "../components/button";
+@use "../abstracts/variables";
+@use "../abstracts/mixin";
+@use 'sass:list';
+
+/*botod de videos*/
+
+.btn.btn-primary.btn-styles {
+    @include button.boton;
+    @include button.hover-btn;
+    color: list.nth(variables.$color-bw, 2);
+    top: 7%;
+    position: fixed;
+    z-index: 1000;
+    margin-left: 10px;
+}
+
+.btn.btn-primary.btn-styles:hover {
+    color: list.nth(variables.$color-bw, 1);
+}
+
+/*estilos offcanbas*/
+.offcanvas.offcanvas-start.offcanvas-style {
+    background: variables.$bk-color;
+    width: 700px;
+}
+
+/*estilo boton offcanbas*/
+
+.btn-close {
+    background-image: none;
+    --bs-btn-close-opacity: 1;
+    --bs-btn-close-hover-opacity: 1;
+}
+
+.btn-close.btn-styles svg {
+    width: 40px;
+    height: 40px;
+    margin-left: -20px;
+    margin-top: -10px;
+    background-color: #ffffff;
+}
+
+.btn-close.btn-styles:hover svg {
+    @include button.hover-btn;
+}
+
+/*estilo videos*/
+.videos {
+    @include mixin.flex;
+}
+
+/*titulo offcanbas*/
+.offcanvas-title.offcanvas-title-style {
+    color: list.nth(variables.$color-bw, 2);
+    background-color: list.nth(variables.$color-bw, 1);
+    @include mixin.ttl-off-canbas;
+}

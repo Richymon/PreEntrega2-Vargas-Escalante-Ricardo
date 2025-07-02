@@ -1,0 +1,90 @@
+@use "../abstracts/mixin";
+@use "../abstracts/variables";
+@use "../components/button";
+@use 'sass:list';
+
+/*grid titulo principal*/
+.title-grid {
+    @include mixin.grid(12, repeat(2, auto), 0px);
+    grid-template-rows: auto auto;
+    place-items: center;
+
+    h1 {
+        margin-top: 10px;
+        grid-column: 1/-1;
+        grid-row: 1;
+        justify-self: center;
+        align-items: center;
+        padding: 10px 150px 0px 150px;
+        background: variables.$bk-color-ttl;
+        border-radius: variables.$bor-rad;
+        margin-bottom: 0px;
+        border: solid list.nth(variables.$color-bw, 2);
+        border-width: 5px;
+    }
+
+    .title-wrapper {
+        display: flex;
+        gap: 0px;
+        align-items: center;
+
+        p {
+            margin-left: -110px;
+            margin-bottom: 110px;
+            background: variables.$color-btn;
+            padding: 10px 8px 0px 8px;
+        }
+    }
+
+    h2 {
+        padding: 5px 30px 5px 30px;
+        margin-top: -10px;
+        grid-column: 1/-1;
+        grid-row: 2;
+        justify-self: center;
+        align-items: center;
+        text-align: center;
+        color: list.nth(variables.$color-bw, 2);
+        background: variables.$bk-color-ttl;
+        border-radius: variables.$bor-rad;
+        border: solid list.nth(variables.$color-bw, 2);
+        border-width: 3px;
+    }
+}
+
+/*grid titulo articulo principales*/
+
+main {
+    section {
+        h3 {
+            background: variables.$bk-color-ttl;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+/*titulo del articulo*/
+main {
+    section {
+        article {
+            h4 {
+                display: inline;
+                margin-left: 100px;
+                padding: 10px;
+                @include mixin.art-ttl;
+                color: list.nth(variables.$color-bw, 1)
+            }
+
+            /*articulo principal*/
+            div {
+                @include mixin.art-principal;
+                margin-bottom: 20px;
+
+                img {
+                    @include mixin.art-img;
+                }
+            }
+        }
+    }
+}

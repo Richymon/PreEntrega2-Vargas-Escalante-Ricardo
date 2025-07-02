@@ -1,0 +1,43 @@
+@use "../abstracts/mixin";
+@use "../abstracts/variables";
+@use "../components/button.scss";
+
+/*barra de navegacion*/
+
+header {
+    nav {
+
+        ul {
+            @include mixin.flex;
+            @include mixin.nav-bar;
+            position: fixed;
+            top: 0px;
+            width: 100%;
+            z-index: 1000;
+
+            li {
+                @include button.boton;
+                @include button.hover-btn;
+            }
+        }
+    }
+}
+
+/*barra de nabegacion de games*/
+main {
+    section {
+        nav {
+            ul {
+                @include mixin.flex;
+                @include mixin.nav-bar;
+
+                li {
+                    @include button.boton;
+                    @include button.hover-btn;
+                }
+            }
+        }
+    }
+}
+
+/*barra de navegacion about me*/

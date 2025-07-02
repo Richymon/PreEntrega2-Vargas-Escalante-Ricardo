@@ -1,0 +1,75 @@
+@use "../abstracts/variables";
+@use 'sass:list';
+
+/*Tipografia general*/
+
+body {
+   font-family: "PT Serif", serif;
+}
+
+p {
+   color: list.nth(variables.$color-bw, 2);
+}
+
+/*tipografia barra navegacion games*/
+main {
+   section {
+      nav {
+         ul {
+            li {
+               font-size: variables.$font-nav-bar-game;
+            }
+         }
+      }
+   }
+}
+
+/*titulo principal*/
+main {
+   section {
+      div {
+         h1 {
+            font-size: variables.$ttl-size;
+            color: list.nth(variables.$color-bw, 1);
+         }
+
+         p {
+            font-size: variables.$ttl-wrapper;
+         }
+      }
+
+      h2 {
+         font-size: variables.$subttl-size;
+      }
+   }
+}
+
+/*titulo general de las noticias*/
+main {
+   h3 {
+      color: list.nth(variables.$color-bw, 1);
+      font-size: variables.$news-updates;
+   }
+}
+
+/*titulo de la noticia*/
+main {
+   section {
+      article {
+         h4 {
+            font-size: variables.$art-new;
+         }
+
+         div {
+            p {
+               font-size: variables.$txt-size;
+            }
+         }
+      }
+   }
+}
+
+/*titulo offcanbas*/
+.offcanvas-title.offcanvas-title-style {
+   font-size: variables.$subttl-size;
+}

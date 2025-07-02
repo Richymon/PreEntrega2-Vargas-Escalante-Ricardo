@@ -1,0 +1,33 @@
+@use "../abstracts/mixin";
+@use "../abstracts/variables";
+@use 'sass:list';
+
+
+/*Richymon & Web designer*/
+main {
+    section {
+        padding: 20px;
+        div {
+            h4 {
+                @include mixin.flex;
+                background: variables.$bk-color-ttl;
+                margin-top: -20px;
+                color: list.nth(variables.$color-bw, 1);
+
+                strong {
+                    padding: 10px;
+                }
+            }
+        }
+
+        article {
+            h5 {
+                @include mixin.about-ttl;
+            }
+            p {
+                margin: 10px;
+                padding: 10px;
+            }
+        }
+    }
+}

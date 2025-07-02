@@ -1,0 +1,24 @@
+@use "../abstracts/variables";
+
+body,
+html {
+    overflow-x: hidden;
+}
+
+/*Reset size*/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/*color del fondo principal*/
+
+body {
+    background-color: variables.$color-fondo;
+}

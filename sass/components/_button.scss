@@ -1,0 +1,20 @@
+@use "../abstracts/variables";
+@use 'sass:list';
+
+//botones
+
+@mixin boton {
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 20px;
+    background-color: variables.$color-btn;
+    color: list.nth(variables.$color-bw, 1);
+}
+
+//hover de botones
+@mixin hover-btn {
+    &:hover {
+        background-color: variables.$hover-btn;
+        color: list.nth(variables.$color-bw, 2);
+    }
+}
