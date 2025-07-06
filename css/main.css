@@ -39,11 +39,48 @@ main section nav ul li {
 main section div h1 {
   font-size: 10rem;
   color: black;
+  /*media query tabletas*/
+}
+@media (max-width: 1024px) {
+  main section div h1 {
+    font-size: 7rem;
+  }
+}
+@media (max-width: 901px) {
+  main section div h1 {
+    font-size: 5rem;
+  }
+}
+@media (max-width: 600px) {
+  main section div h1 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 426px) {
+  main section div h1 {
+    font-size: 1.8rem;
+  }
 }
 main section div p {
   font-size: 1.5rem;
+  /*media tabletas*/
 }
-main section h2 {
+@media (max-width: 1024px) {
+  main section div p {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 801px) {
+  main section div p {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 426px) {
+  main section div p {
+    font-size: 1rem;
+  }
+}
+main section div h2 {
   font-size: 2rem;
 }
 
@@ -64,6 +101,14 @@ main section article div p {
 /*titulo offcanbas*/
 .offcanvas-title.offcanvas-title-style {
   font-size: 2rem;
+}
+
+/*tipografia footer derechos reservados*/
+footer section .shadow {
+  text-shadow: -1px 2px 0 #484848;
+}
+footer section .derechos {
+  font-size: 1rem;
 }
 
 /*barra de navegacion*/
@@ -87,10 +132,29 @@ header nav ul li {
   border-radius: 20px;
   background-color: #004AAD;
   color: black;
+  /*media tabletas*/
+  /*media celulares*/
 }
 header nav ul li:hover {
   background-color: #8b36da;
   color: white;
+}
+@media (max-width: 1024px) {
+  header nav ul li {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 600px) {
+  header nav ul li {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 426px) {
+  header nav ul li {
+    font-size: 1rem;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 /*barra de nabegacion de games*/
@@ -103,6 +167,7 @@ main section nav ul {
   gap: 20%;
   font-size: 1.8rem;
   background-color: black;
+  width: 100%;
 }
 main section nav ul li {
   padding-left: 30px;
@@ -110,13 +175,41 @@ main section nav ul li {
   border-radius: 20px;
   background-color: #004AAD;
   color: black;
+  /*media tabletas*/
+  /*media celulares*/
 }
 main section nav ul li:hover {
   background-color: #8b36da;
   color: white;
 }
+@media (max-width: 1024px) {
+  main section nav ul li {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 600px) {
+  main section nav ul li {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 426px) {
+  main section nav ul li {
+    font-size: 1rem;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (max-width: 421px) {
+  main section nav ul li {
+    font-size: 0.8rem;
+  }
+}
 
-/*barra de navegacion about me*/
+/*barra de navegacion, se actualisara con js o bootstrap*/
+main #nav-games {
+  display: none;
+}
+
 /*grid titulo principal*/
 .title-grid {
   display: grid;
@@ -141,6 +234,17 @@ main section nav ul li:hover {
   border: solid white;
   border-width: 5px;
 }
+@media (max-width: 769px) {
+  .title-grid h1 {
+    padding: 5px 50px 5px 100px;
+    margin: 0px;
+  }
+}
+@media (max-width: 426px) {
+  .title-grid h1 {
+    padding: 5px 50px 5px 50px;
+  }
+}
 .title-grid .title-wrapper {
   display: flex;
   gap: 0px;
@@ -151,6 +255,11 @@ main section nav ul li:hover {
   margin-bottom: 110px;
   background: #004AAD;
   padding: 10px 8px 0px 8px;
+}
+@media (max-width: 769px) {
+  .title-grid .title-wrapper p {
+    margin-left: 10px;
+  }
 }
 .title-grid h2 {
   padding: 5px 30px 5px 30px;
@@ -215,6 +324,18 @@ main section article div img {
   padding: 0px;
 }
 
+@media (max-width: 426px) {
+  #home-image {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  main section article div img {
+    display: none;
+  }
+}
+
 /*botod de videos*/
 .btn.btn-primary.btn-styles {
   padding-left: 30px;
@@ -231,6 +352,11 @@ main section article div img {
 .btn.btn-primary.btn-styles:hover {
   background-color: #8b36da;
   color: white;
+}
+@media (max-width: 426px) {
+  .btn.btn-primary.btn-styles {
+    top: 45px;
+  }
 }
 
 .btn.btn-primary.btn-styles:hover {
@@ -304,7 +430,7 @@ footer section p {
   font-size: 1.5rem;
 }
 footer section .mis-datos {
-  color: white;
+  margin: 5px;
   font-size: 1rem;
   padding-left: 30px;
   padding-right: 30px;

@@ -1,5 +1,9 @@
+// variables
 @use "../abstracts/variables";
+//listas
 @use 'sass:list';
+//breakpoints
+@use "../abstracts/breakpoints";
 
 //MIXIN
 
@@ -27,6 +31,25 @@
     gap: 20%;
     font-size: variables.$font-nav-bar;
     background-color: list.nth(variables.$color-bw, 1);
+}
+
+@mixin media-nav-bar {
+
+    /*media tabletas*/
+    @media (max-width: breakpoints.$tablet-big) {
+        font-size: 1.5rem;
+    }
+
+    @media (max-width: breakpoints.$cel-big) {
+        font-size: variables.$size-nav-bar-cel-big;
+    }
+
+    /*media celulares*/
+    @media (max-width: breakpoints.$cel-sm) {
+        font-size: 1rem;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 
 //titulos de las noticias

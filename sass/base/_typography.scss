@@ -1,5 +1,9 @@
+//variables
 @use "../abstracts/variables";
+//lista
 @use 'sass:list';
+//media querys
+@use "../abstracts/breakpoints";
 
 /*Tipografia general*/
 
@@ -31,15 +35,46 @@ main {
          h1 {
             font-size: variables.$ttl-size;
             color: list.nth(variables.$color-bw, 1);
+
+            /*media query tabletas*/
+            @media (max-width: breakpoints.$tablet-big) {
+               font-size: variables.$size-ttl-tablet-bg;
+            }
+
+            @media (max-width: breakpoints.$tablet-m) {
+               font-size: variables.$size-ttl-tablet-m;
+            }
+
+            @media (max-width: breakpoints.$cel-big) {
+               font-size: variables.$size-ttl-cel-big;
+            }
+
+            @media (max-width: breakpoints.$cel-sm) {
+               font-size: variables.$size-ttl-cel-sm;
+            }
          }
 
          p {
             font-size: variables.$ttl-wrapper;
-         }
-      }
 
-      h2 {
-         font-size: variables.$subttl-size;
+            /*media tabletas*/
+            @media (max-width: 1024px) {
+               margin-top: 20px;
+            }
+
+            @media (max-width: 801px) {
+               margin-top: 30px;
+            }
+
+            @media (max-width: breakpoints.$cel-sm) {
+               font-size: variables.$txt-size;
+            }
+         }
+
+
+         h2 {
+            font-size: variables.$subttl-size;
+         }
       }
    }
 }
@@ -72,4 +107,17 @@ main {
 /*titulo offcanbas*/
 .offcanvas-title.offcanvas-title-style {
    font-size: variables.$subttl-size;
+}
+
+/*tipografia footer derechos reservados*/
+footer {
+   section {
+      .shadow {
+         text-shadow: -1px 2px 0 #484848;
+      }
+
+      .derechos {
+         font-size: 1rem;
+      }
+   }
 }

@@ -1,4 +1,3 @@
-
 //color de fondo principal
 $color-fondo: #17062A;
 
@@ -44,4 +43,19 @@ $art-new: 2rem;
 $txt-size: 1rem;
 
 //fondo de los articulos
-$bk-color:linear-gradient(to right, #020207, #413FFC);
+$bk-color: linear-gradient(to right, #020207, #413FFC);
+
+//titulo principal para  TABLETAS GRANDES
+$size-ttl-tablet-bg: 7rem;
+
+//titulo principal para TABLETAS MEDIANAS
+$size-ttl-tablet-m: 5rem;
+
+//titulo principal para CELLULARES GRANDES
+$size-ttl-cel-big: 3rem;
+
+//titulo principal CELULARES CHICOS
+$size-ttl-cel-sm: 1.8rem;
+
+//tamaño letra barra de navegacion CELULARES GRANDES
+$size-nav-bar-cel-big: 1.2rem;

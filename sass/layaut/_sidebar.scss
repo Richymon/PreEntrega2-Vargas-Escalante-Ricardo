@@ -1,7 +1,13 @@
+//botones
 @use "../components/button";
+//variables
 @use "../abstracts/variables";
+//mixin
 @use "../abstracts/mixin";
+//listas
 @use 'sass:list';
+//breakpoints
+@use "../abstracts/breakpoints";
 
 /*botod de videos*/
 
@@ -13,6 +19,10 @@
     position: fixed;
     z-index: 1000;
     margin-left: 10px;
+
+    @media (max-width: breakpoints.$cel-sm) {
+        top: 45px;
+    }
 }
 
 .btn.btn-primary.btn-styles:hover {

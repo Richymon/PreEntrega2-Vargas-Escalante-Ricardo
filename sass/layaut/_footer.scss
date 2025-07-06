@@ -24,7 +24,7 @@ footer {
         }
 
         .mis-datos {
-            color: white;
+            margin: 5px;
             font-size: variables.$txt-size ;
             @include button.boton;
             @include button.hover-btn;
@@ -32,7 +32,7 @@ footer {
         }
 
         .mis-datos:hover {
-            color:list.nth(variables.$color-bw, 1);
+            color: list.nth(variables.$color-bw, 1);
         }
     }
 }

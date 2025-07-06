@@ -1,7 +1,13 @@
+// mixin
 @use "../abstracts/mixin";
+//variables
 @use "../abstracts/variables";
+// botones
 @use "../components/button";
+//listas
 @use 'sass:list';
+//breakpoints
+@use "../abstracts/breakpoints";
 
 /*grid titulo principal*/
 .title-grid {
@@ -21,6 +27,15 @@
         margin-bottom: 0px;
         border: solid list.nth(variables.$color-bw, 2);
         border-width: 5px;
+
+        @media (max-width: breakpoints.$tablet-sm) {
+            padding: 5px 50px 5px 100px;
+            margin: 0px;
+        }
+
+        @media (max-width: breakpoints.$cel-sm) {
+            padding: 5px 50px 5px 50px;
+        }
     }
 
     .title-wrapper {
@@ -33,6 +48,10 @@
             margin-bottom: 110px;
             background: variables.$color-btn;
             padding: 10px 8px 0px 8px;
+
+            @media (max-width: breakpoints.$tablet-sm) {
+                margin-left: 10px;
+            }
         }
     }
 

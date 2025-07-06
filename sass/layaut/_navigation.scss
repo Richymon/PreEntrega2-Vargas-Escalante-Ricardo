@@ -1,6 +1,11 @@
+// mixin
 @use "../abstracts/mixin";
+//variables
 @use "../abstracts/variables";
+// botones
 @use "../components/button.scss";
+//breakpoints
+@use "../abstracts/breakpoints";
 
 /*barra de navegacion*/
 
@@ -18,6 +23,7 @@ header {
             li {
                 @include button.boton;
                 @include button.hover-btn;
+                @include mixin.media-nav-bar;
             }
         }
     }
@@ -27,17 +33,22 @@ header {
 main {
     section {
         nav {
+
             ul {
                 @include mixin.flex;
                 @include mixin.nav-bar;
+                width: 100%;
 
                 li {
                     @include button.boton;
                     @include button.hover-btn;
+                    @include mixin.media-nav-bar;
+                    
+                    @media (max-width: 421px) {
+                        font-size: 0.8rem;
+                    }
                 }
             }
         }
     }
 }
-
-/*barra de navegacion about me*/
